@@ -1,0 +1,33 @@
+.p-contact {
+    .c-question {
+        background: url("assets/img/bg_maincontact.jpg") center no-repeat;
+        background-size: cover;
+    }
+
+    .c-contact {
+        max-width: 1160px;
+        margin: 0 auto 130px;
+
+        &__content {
+            margin-bottom: 56px;
+        }
+
+        &__title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 0 32px -4px;
+            @include sp {
+                font-size: 2rem;
+                margin: 15px 0;
+            }
+        }
+
+        &__subtitle {
+            font-size: 1.4rem;
+            line-height: 2;
+            letter-spacing: 0.1em;
+            font-feature-settings: "palt" 1;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+.c-title {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 3px;
+    text-align: center;
+    font-feature-settings: "palt" 1;
+    @include sp {
+        max-width: 271px;
+    }
+
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 14px 0;
+        color: #00ada0;
+        @include sp {
+            font-size: 1.4rem;
+            margin: 12px 0 9px;
+        }
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        padding-bottom: 17px;
+        @include sp {
+            font-size: 1.6rem;
+            padding-bottom: 15px;
+        }
+    }
+
+    &__pickup {
+        border-color: #acdeda;
+
+        p {
+            color: #fff;
+            opacity: 0.5;
+        }
+
+        h2 {
+            color: #fff;
+        }
+    }
+
+    &__news {
+        border: 0;
+
+        p {
+            @include sp {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    &__info {
+        padding: 8px 0 9px;
+        line-height: 1.6;
+        max-width: 500px;
+        @include sp {
+            max-width: 271px;
+            padding: 8px 0 9px;
+            line-height: 1.7;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        h2 {
+            padding-bottom: 0;
+        }
+    }
+}
+/*
+------------------------------------------------------------*/
+
+
+
+
+
+

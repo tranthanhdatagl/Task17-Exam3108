@@ -1,0 +1,55 @@
+
+//------------------------------------------------------------
+// color
+.u-blue {
+    font-weight: 700;
+    color: #00ada0;
+}
+
+.u-red {
+    color: #fd0000;
+    margin-left: -5px;
+
+    &2 {
+        margin-left: 0;
+    }
+}
+
+.u-error {
+    font-size: 1.4rem;
+    width: 100%;
+    color: #fd0000;
+    padding-left: 32%;
+    display: none;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt" 1;
+    @include sp {
+        padding-left: 0;
+    }
+
+    &1 {
+        display: none;
+        line-height: 1.5;
+        padding-left: 0;
+        margin: 19px 0 -40px;
+        letter-spacing: 0;
+    }
+}
+
+#u-errorlast {
+    margin: 10px 0 0;
+}
+
+.is-block {
+    display: block;
+    margin: 9px 0 15px;
+}
+
+.is-mbcontact {
+    margin-bottom: 37px !important;
+}
+
+.is-mtsubmit {
+    margin-top: 50px !important;
+}
+//------------------------------------------------------------
