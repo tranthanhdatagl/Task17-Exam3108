@@ -22,14 +22,11 @@
                 width: 100%;
                 display: inline-block;
                 height: auto;
-                padding: 0;
+                padding: 9px 0 0;
             }
 
             &:nth-child(1) {
                 border-top: 1px solid #ccc;
-                @include sp {
-                    padding: 9px 0 2px;
-                }
             }
 
             &:last-child {
@@ -95,7 +92,6 @@
         z-index: -1;
         @include bp(1460) {
             left: unset;
-            right: 2%;
         }
         @include sp {
             display: none;

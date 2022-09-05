@@ -13,76 +13,81 @@ var btnSubmit = document.getElementById('c-btnsubmit');
   var phoneNumber = document.getElementById('is-phoneNumber');
   var email = document.getElementById('is-email');
   var request = document.getElementById('is-request');
+  var error1 = document.getElementById('is-error1');
   fullName.oninput = function () {
-    console.log(fullName.value);
     if(fullName.value != ''){
       setSuccess(fullName);
+      error1.style.display = 'none';
     }
     else{
       setError(fullName, '『氏名』を入力してください。');
+        error1.style.display = 'block';
     }
   };
   fullName.onblur = function () {
-    console.log(fullName.value);
     if(fullName.value != ''){
       setSuccess(fullName);
     }
     else{
       setError(fullName, '『氏名』を入力してください。');
+      error1.style.display = 'block';
     }
   };
   phoneNumber.oninput = function () {
-    console.log(phoneNumber.value);
     if(phoneNumber.value != ''){
       setSuccess(phoneNumber);
+      error1.style.display = 'none';
     }
     else{
       setError(phoneNumber , '『電話番号』を入力してください。');
+      error1.style.display = 'block';
     }
   };
   phoneNumber.onblur = function () {
-    console.log(phoneNumber.value);
     if(phoneNumber.value != ''){
       setSuccess(phoneNumber);
     }
     else{
       setError(phoneNumber , '『電話番号』を入力してください。');
+      error1.style.display = 'block';
     }
   };
   email.oninput = function () {
-    console.log(email.value);
     if(email.value != ''){
       setSuccess(email);
+      error1.style.display = 'none';
     }
     else{
       setError(email, '『メールアドレス』を入力してください。');
+      error1.style.display = 'block';
     }
   };
   email.onblur = function () {
-    console.log(email.value);
     if(email.value != ''){
       setSuccess(email);
     }
     else{
       setError(email, '『メールアドレス』を入力してください。');
+      error1.style.display = 'block';
     }
   };
   request.oninput = function () {
-    console.log(request.value);
     if(request.value != ''){
       setSuccess(request);
+      error1.style.display = 'none';
     }
     else{
       setError(request, '『お問い合わせ内容』を入力してください。');
+      error1.style.display = 'block';
     }
   };
   request.onblur = function () {
-    console.log(request.value);
     if(request.value != ''){
       setSuccess(request);
     }
     else{
       setError(request, '『お問い合わせ内容』を入力してください。');
+      error1.style.display = 'block';
     }
   };
   function checkValidate() {
@@ -120,8 +125,7 @@ var btnSubmit = document.getElementById('c-btnsubmit');
     } else{
       setSuccess(request);
     }
-   
-    console.log(isCheck)
+  
     if(isCheck == false){
       error1.style.display = 'block';
     } else{
@@ -138,8 +142,6 @@ var btnSubmit = document.getElementById('c-btnsubmit');
     parentEle.querySelector('small').classList.add('is-block');
     mbContact.classList.add('is-mbcontact');
     mtSubmit.classList.add('is-mtsubmit');
-    console.log(parentEle.querySelector('small').innerText);
-    console.log(parentEle);
   }
   
   function setSuccess(ele){
